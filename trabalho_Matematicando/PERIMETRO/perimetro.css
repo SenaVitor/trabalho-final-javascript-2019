@@ -1,0 +1,181 @@
+body {
+	background-color: rgb(10,10,10);
+	color: white;
+}
+
+#Home {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	font-family: century gothic;
+}
+
+#Home:hover {
+	background-position: left bottom;
+	transition: all 2s ease;
+}
+
+#Home a {
+	text-decoration: none;
+	color: white;
+	transition: all 1s ease;
+}
+
+#Home a:hover {
+	color: yellow;
+	font-size: 125%;
+	transition: all 1s ease;
+	animation-duration: 0s;
+	animation-name: hoverDoHome;
+}
+
+@keyframes hoverDoHome {
+	from {
+		color: white;
+		font-size: 100%;
+	}
+
+	to {
+		color: yellow;
+		font-size: 125%;
+	}
+}
+
+.hrbig {
+	border-color: blue;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.header1 {
+	margin-left: -3%;
+	color: white;
+	text-align: center;
+}
+
+.header1 a {
+	color: white;
+	text-decoration: none;
+}
+
+.header1 li {
+	display: inline-block;
+	padding: 8px;
+	font-size: 19px;
+	font-family: arial;
+	border: 2px solid green;
+	border-radius: 20px;
+	background: linear-gradient(to left, black 50%, green 50%);
+	background-position: right bottom;
+	background-size: 200% 100%;
+	transition: all 0.5s ease;
+}
+
+.header1 li:hover {
+	background-position: left bottom;
+	transition: all 1s ease;
+}
+
+.plado {
+	text-align: center;
+	font-size: 19px;
+	font-family: arial;
+}
+
+.pladinho {
+	text-align: center;
+	font-size: 14px;
+	font-family: arial;
+}
+
+.opcoes {
+	color: white;
+	background-color: black;
+	border: 2px solid blue;
+	text-align: center;
+	font-size: 15px;
+	padding: 4px;
+	font-family: century gothic;
+	border-radius: 10px;
+}
+
+.textPerimetros {
+	text-align: center;
+	width: 220px;
+	height: 15px;
+	padding: 3px;
+	font-size: 14px;
+	background-color: black;
+	border: 2px solid green;
+	color: white;
+	border-radius: 5px;
+}
+
+.buttonPerimetro {
+	color: white;
+	border: 2px solid green;
+	border-radius: 5px;
+	font-size: 17px;
+	padding: 5px;
+	cursor: pointer;
+	background: linear-gradient(to top, green 50%, white 50%);
+	background-position: bottom;
+	background-size: 100% 200%;
+	transition: all 0.5s ease;
+}
+
+.buttonPerimetro:hover {
+	background-position: top;
+	transition: all 0.5s ease;
+	color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#footerH1 {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 17px;
+	font-family: century gothic;
+}
+
+#footer {
+	font-size: 13px;
+	background-color: rgba(10, 10, 10, 0.5);
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	padding: 1px;
+}
+
+.footerTD {
+	width: 1%;
+}
+
+.footerTD img {
+	transition: all 0.5s ease;
+}
+
+.footerTD img:hover {
+	animation-duration: 0s;
+	animation-name: hoverDoFooter;
+	width: 125px;
+	height: 125px;
+	transition: all 0.5s ease;
+}
+
+@keyframes hoverDoFooter {
+	from {
+		width: 100px;
+		height: 100px;
+	}
+
+	to {
+		width: 125px;
+		height: 125px;
+	}
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+	<link rel="icon" type="image/x-icon" href="../imagens/icone.png">
+	<title>Cálculo de Áreas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="areas.css">
+	<script type="text/javascript" src="areas.js"></script>
+</head>
+<body>
+
+	<div id="principal">
+		<h1 id="Home"><a href="../HOME/index.html">Matematicando</a></h1>
+
+	<hr class="hrbig">
+
+		<header class="header1">
+			<ul>
+				<li><a href="../AREAS/areas.html">Cálculo de Áreas</a></li>
+				<li><a href="../BHASKARA/bhaskara.html">Fórmula de Bhaskara</a></li>
+				<li><a href="../RADIANO/radiano.html">Conversão de Graus-Radianos</a></li>
+				<li><a href="../PERIMETRO/perimetro.html">Cálculo de Perímetros</a></li>
+				<li><a href="../IMC/imc.html">Cálculo de IMC</a></li>
+			</ul>
+		</header>
+
+	<hr class="hrsmall">
+
+		<h1 class="h1">Bem vindo à aba de Cálculo de Áreas!</h1>
+
+		<article class="artigos">
+			<p>Aqui você encontrará páginas com cálculos diversos para facilitar sua vida! O site foi feito por alunos do segundo ano do curso de Informática. Nosso objetivo é criar fórmulas em JavaScript que facilitem a execução de certos tipos de cálculos. Neste site, existem desde cálculos de áreas de certas figuras geométricas até o cálculo de movimento retilíneo uniforme.
+			<br>Todos os recursos do site podem ser usados gratuitamente, e os cálculos foram divididos em diferentes páginas.</p>
+
+		<br>
+			<table id="tableAreas" border="0">
+
+				<td colspan="2">
+					<hr class="hrsmall2">
+					<h1 class="h1">Quadrado</h1>
+				</td>
+
+				<tr>
+					<td>
+						<img src="../imagens/quadrado1.png" width="290" height="261" alt="Imagem de um quadrado." title="Quadrado">
+					</td>
+					<td>
+						<p>Saber Calcular a área de um quadrado nos auxilia principalmente na construção civil de uma casa, apartamento, estrada, entre outros, é <strong>importante calcular a área e perímetro de um quadrado para saber quanto de material será utilizado</strong> em determinada obra.</p>
+						<p>Agora vamos mostrar como calcular a área de um quadrado, assim podemos entender melhor do assunto e praticar em nosso cotidiano.</p>
+						<p>Para calcular a área de um quadrado, basta elevar ao quadrado a medida de um dos lados, ou seja,</p>
+						<p>A = L²</p>
+						<p>A= Área</p>
+						<p>L² = Lado (Elevado ao quadrado- O número vezes ele mesmo)</p>
+						<p><strong>Agora, que tal testar por si mesmo? Execute a operação a seguir:</strong></p>
+						<p>
+							<form name="calcularAreaQuadrado" class="formularios">
+								<input type="text" name="valorAreaQuadrado" placeholder="Insira o valor do lado." class="inputsTexto">
+								<p></p>
+								<input type="button" name="executarAreaQuadrado" onclick="aQuadrado();" value="Calcular" class="inputsButton">
+								<p></p>
+								<input type="text" name="resultadoAreaQuadrado" id="rAQ" placeholder="O resultado aparecerá aqui." class="inputsTexto" disabled="">	
+							</form>
+						</p>
+					</td>
+				</tr>
+
+				<td colspan="2">
+					<hr class="hrsmall2">
+					<h1 class="h1">Circunferência</h1>
+				</td>
+
+				<tr>
+					<td>
+						<img src="../imagens/circunferencia1.png" width="290" height="261" alt="Imagem de uma circunferência." title="Circunferência">
+					</td>
+					<td>
+						<p>Para calcular a área de uma circunferência, partimos da definição de circunferências concêntricas, que são as regiões circulares que têm o mesmo centro.</p>
+						<p>Para calcular a área de uma região limitada por uma circunferência, nós devemos aplicar a seguinte fórmula:</p>
+						<p><b>A</b> = π<b>R²</b></p>
+						<p>Onde temos que:</p>
+						<p>π (pi) = aproximadamente 3,14</p>
+						<p>r = raio da circunferência</p>
+						<p><strong>Insira o valor do raio de qualquer circunferência e calcule o valor de sua área com a operação a abaixo!</strong></p>
+						<p>
+							<form name="calcularAreaCircunferencia" class="formularios">
+								<input type="text" name="valorAreaCircunferencia" placeholder="Insira o valor do raio." class="inputsTexto">
+								<p></p>
+								<input type="button" name="executarAreaCircunferencia" onclick="aCircunferencia();" value="Calcular" class="inputsButton">
+								<p></p>
+								<input type="text" name="resultadoAreaCircunferencia" id="rAC" placeholder="O resultado aparecerá aqui." class="inputsTexto" disabled="">	
+							</form>
+						</p>
+					</td>
+				</tr>
+
+				<td colspan="2">
+					<hr class="hrsmall2">
+					<h1 class="h1">Triângulo</h1>
+				</td>
+
+				<tr>
+					<td>
+						<img src="../imagens/triangulo.png" width="290" height="261" alt="Imagem de um triângulo." title="Triângulo">
+					</td>
+					<td>
+						<p>Dentre os estudos da Geometria, o triângulo consiste na figura plana mais simples. Além de ser a mais simples, <strong>é a mais importante de todas</strong>, pois possui várias aplicações perante as situações ligadas ao cotidiano.</p>
+						<p>A área do triângulo pode ser calculada através das medidas da base e da altura da figura. Lembre-se que o triângulo é uma figura geométrica plana formada por três lados.</p>
+						<p>Então, temos em vista o seguinte cálculo para saber a área de um triângulo:</p>
+						<p>b = base</p>
+						<p>h = altura</p>
+						<p>Área = (b * h) / 2</p>
+						<p><strong>Vá em frente e calcule a área do triângulo que desejar!</strong></p>
+						<p>
+							<form name="calcularAreaTriangulo" class="formularios">
+								<input type="text" name="valorAreaTriangulo" placeholder="Insira o valor da base." class="inputsTexto">
+								<p></p>
+								<input type="text" name="valor2AreaTriangulo" placeholder="Insira o valor da altura." class="inputsTexto">
+								<p></p>
+								<input type="button" name="executarAreaTriangulo" onclick="aTriangulo();" value="Calcular" class="inputsButton">
+								<p></p>
+								<input type="text" name="resultadoAreaTriangulo" id="rAT" placeholder="O resultado aparecerá aqui." class="inputsTexto" disabled="">
+							</form>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</article>
+
+		<center>
+			<a href="#"><img src="../imagens/back.png" width="40px" height="40px" id="topo" alt="Botão de voltar ao topo da página" title="Voltar ao topo"></a>
+		</center>
+
+		<footer id="footer">
+			<h1 id="footerH1">Contato</h1>
+			<table id="footerTable" border="0">
+				<tr>
+
+					<td class="footerTD">
+						<a href="https://www.facebook.com/EeepProfessoraLuizadeTeodoro/" target="_blank"><img src="../imagens/fb.png" width="100px" height="100px" alt="Facebook da escola." title="Facebook da escola"></a>
+					</td>
+					
+					<td class="footerTD">
+						<p>Autores: Vitor Lucas, João Victor Vieira, Andrew Monteiro
+						<br>Fone: (85) 99226-5324</p>
+						<p>Escola Profissionalizante Professora Luiza de Teodoro Vieira
+						<br>Pacatuba - CE</p>
+						<p>2019</p>			
+					</td>
+
+					<td class="footerTD">
+						<a href="https://www.instagram.com/eeep_ltvgremio/?hl=pt-br" target="_blank"><img src="../imagens/instagram.png" width="100px" height="100px" alt="Instagram da escola." title="Instagram da escola"></a>
+					</td>
+				
+				</tr>
+			</table>			
+		</footer>
+	</div>
+	
+</body>
+</html>

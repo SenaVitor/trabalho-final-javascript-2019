@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+	<link rel="icon" type="image/x-icon" href="../imagens/icone.png">
+	<title>Cálculo de IMC</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="imc.css">
+	<script type="text/javascript" src="imc.js"></script>
+</head>
+<body>
+
+	<h1 id="Home"><a href="../HOME/index.html">Matematicando</a></h1>
+
+	<hr class="hrbig">
+
+	<nav class="header1">
+		<ul>
+			<li><a href="../AREAS/areas.html">Cálculo de Áreas</a></li>
+			<li><a href="../BHASKARA/bhaskara.html">Fórmula de Bhaskara</a></li>
+			<li><a href="../RADIANO/radiano.html">Conversão de Graus-Radianos</a></li>
+			<li><a href="../PERIMETRO/perimetro.html">Cálculo de Perímetros</a></li>
+			<li><a href="../IMC/imc.html">Cálculo de IMC</a></li>
+		</ul>
+	</nav>
+
+	<p class="plado">O IMC (Índice de Massa Corporal) é uma ferramenta usada para detectar casos de obesidade ou desnutrição, principalmente em estudos que envolvem grandes populações. De acordo com o endocrinologista Mario Kedhi Carra, membro da Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica (ABESO), essa é uma medida universal de classificação de obesidade, validada pela Organização Mundial da Saúde.</p>
+
+	<center>
+		<img src="../imagens/imc.jpg" style="border-radius: 10px;" alt="Imagem da fórmula do IMC." title="Fórmula do IMC">
+	</center>
+
+	<p class="plado">O IMC é calculado dividindo o peso pela altura elevada ao quadrado. Ou seja, de forma mais simples, você multiplica sua altura por ela mesma e depois divide seu peso pelo resultado da última conta.</p>
+
+	<center>
+		<img src="../imagens/imcTabela.jpg" style="border-radius: 5px;" alt="Imagem da table do IMC." title="Tabela de IMC">
+	</center>
+
+	<p class="plado"><strong>Calcule agora o <em>seu</em> IMC!</strong></p>
+
+	<form name="formIMC" id="formIMC">
+		<input type="text" name="valorAltura" class="inputsIMC" placeholder="Insira o valor da sua altura.">
+		<input type="text" name="valorPeso" class="inputsIMC" placeholder="Insira o valor do seu peso.">
+		<p></p>
+		<input type="button" name="calculoIMC" id="calculoIMC" value="Executar o cálculo" onclick="imc();">
+		<p></p>
+		<textarea id="resultadoIMC" placeholder="Os resultados aparecerão aqui." disabled=""></textarea>		
+	</form>
+
+	<footer id="footer">
+		<h1 id="footerH1">Contato</h1>
+		<table id="footerTable" border="0">
+			<tr>
+
+				<td class="footerTD">
+					<a href="https://www.facebook.com/EeepProfessoraLuizadeTeodoro/" target="_blank"><img src="../imagens/fb.png" width="100px" height="100px" alt="Facebook da escola." title="Facebook da escola"></a>
+				</td>
+				
+				<td class="footerTD">
+					<p>Autores: Vitor Lucas, João Victor Vieira, Andrew Monteiro
+					<br>Fone: (85) 99226-5324</p>
+					<p>Escola Profissionalizante Professora Luiza de Teodoro Vieira
+					<br>Pacatuba - CE</p>
+					<p>2019</p>			
+				</td>
+
+				<td class="footerTD">
+					<a href="https://www.instagram.com/eeep_ltvgremio/?hl=pt-br" target="_blank"><img src="../imagens/instagram.png" width="100px" height="100px" alt="Instagram da escola." title="Instagram da escola"></a>
+				</td>
+			
+			</tr>
+		</table>			
+	</footer>
+
+</body>
+</html>

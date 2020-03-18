@@ -1,0 +1,201 @@
+body {
+	background-image: url(imagens/bg.jpg);
+	background-size: 100%;
+	background-color: rgb(20,20,20);
+}
+
+#principal {
+	padding-top: 2px;
+	background-color: rgb(10,10,10);
+	margin-left: 3%;
+	width: 90%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+}
+
+#Home {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+	text-align: center;
+	font-family: century gothic;
+}
+
+#Home:hover {
+	background-position: left bottom;
+	transition: all 2s ease;
+}
+
+#Home a {
+	text-decoration: none;
+	color: white;
+	transition: all 1s ease;
+}
+
+#Home a:hover {
+	color: yellow;
+	font-size: 125%;
+	transition: all 1s ease;
+	animation-duration: 0s;
+	animation-name: hoverDoHome;
+}
+
+@keyframes hoverDoHome {
+	from {
+		color: white;
+		font-size: 100%;
+	}
+
+	to {
+		color: yellow;
+		font-size: 125%;
+	}
+}
+
+.hrbig {
+	border-color: blue;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+.header1 {
+	margin-left: -3%;
+	color: white;
+	text-align: center;
+}
+
+.header1 a {
+	color: white;
+	text-decoration: none;
+}
+
+.header1 li {
+	display: inline-block;
+	padding: 8px;
+	font-size: 19px;
+	font-family: arial;
+	border: 2px solid green;
+	border-radius: 20px;
+	background: linear-gradient(to left, black 50%, green 50%);
+	background-position: right bottom;
+	background-size: 200% 100%;
+	transition: all 0.5s ease;
+}
+
+.header1 li:hover {
+	background-position: left bottom;
+	transition: all 1s ease;
+}
+
+.hrsmall {
+	width: 50%;
+	border-color: blue;
+	border-radius: 10px;
+}
+
+.hrsmall2 {
+	width: 25%;
+	border-color: blue;
+	border-width: 1px;
+	border-radius: 10px;
+}
+
+.h1 {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-family: century gothic;
+}
+
+.artigos p {
+	font-family: arial;
+	font-size: 15px;
+	margin-left: 2%;
+	color: white;
+}
+
+.formularios {
+	text-align: left;
+}
+
+.inputsTexto {
+	font-weight: bolder;
+	background-color: black;
+	border: 2px solid green;
+	border-radius: 10px;
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	width: 250px;
+}
+
+.inputsButton {
+	cursor: pointer;
+	font-weight: bolder;
+	background-color: black;
+	border: 2px solid blue;
+	border-radius: 10px;
+	font-family: century gothic;
+	font-size: 15px;
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	width: 250px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#footerH1 {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 17px;
+	font-family: century gothic;
+}
+
+#footer {
+	font-size: 13px;
+	background-color: rgba(10, 10, 10, 0.5);
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	padding: 1px;
+}
+
+.footerTD {
+	width: 1%;
+}
+
+.footerTD img {
+	transition: all 0.5s ease;
+}
+
+.footerTD img:hover {
+	animation-duration: 0s;
+	animation-name: hoverDoFooter;
+	width: 125px;
+	height: 125px;
+	transition: all 0.5s ease;
+}
+
+@keyframes hoverDoFooter {
+	from {
+		width: 100px;
+		height: 100px;
+	}
+
+	to {
+		width: 125px;
+		height: 125px;
+	}
+}

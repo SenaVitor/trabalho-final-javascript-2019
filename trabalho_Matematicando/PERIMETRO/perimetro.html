@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo de Perímetro</title>
+	<link rel="icon" type="image/x-icon" href="../imagens/icone.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="perimetro.css">
+	<script type="text/javascript" src="perimetro.js"></script>
+</head>
+
+<body>
+
+	<h1 id="Home"><a href="../HOME/index.html">Matematicando</a></h1>
+
+	<hr class="hrbig">
+
+	<nav class="header1">
+		<ul>
+			<li><a href="../AREAS/areas.html">Cálculo de Áreas</a></li>
+			<li><a href="../BHASKARA/bhaskara.html">Fórmula de Bhaskara</a></li>
+			<li><a href="../RADIANO/radiano.html">Conversão de Graus-Radianos</a></li>
+			<li><a href="../PERIMETRO/perimetro.html">Cálculo de Perímetros</a></li>
+			<li><a href="../IMC/imc.html">Cálculo de IMC</a></li>
+		</ul>
+	</nav>
+
+	<p class="plado">O perímetro é a medida do contorno de um objeto bidimensional, ou seja, a soma de todos os lados de uma figura 
+	geométrica. O perímetro de um círculo ou elipse é chamado de circunferência.
+	Calcular o perímetro tem várias aplicações práticas. Um perímetro calculado é o comprimento da cerca necessária para cercar um quintal ou jardim. O perímetro de uma roda (sua circunferência) descreve até onde ela irá rolar em uma única revolução. Da mesma forma, a quantidade de corda enrolada em torno de um carretel está relacionada ao perímetro do carretel.</p>
+
+	<p class="plado">O perímetro do quadrado corresponde a soma dos quatro lados dessa figura plana.
+	Lembre-se que o quadrado é um quadrilátero regular que apresenta lados com as mesmas medidas (congruentes). Assim, essa figura é composta por quatro ângulos retos (90°).</p>
+	
+	<center>
+		<img src="../imagens/quadradoperi.jpg" width="200px" height="200px" alt="Imagem de um quadrado." title="Perímetro do quadrado">
+	</center>
+
+	<p class="plado">O perímetro de um círculo, frequentemente chamado de circunferência, é proporcional ao seu diâmetro e seu raio. Ou seja, existe um número constante pi, π (p em grego para perímetro), tal que se P é o perímetro do círculo e D seu diâmetro então,</p>
+
+	<center>
+		<img src="../imagens/circunferenciaperi.jpg" width="400px" height="250px" style="border-radius: 50px;" alt="Imagem de uma circunferência com a fórmula de cálculo de seu perímetro." title="Perímetro da circunferência">
+	</center>
+
+	<p class="plado">O perímetro do retângulo é a soma das medidas de todos os lados dessa figura geométrica plana.</p>
+	<p class="plado">Lembre-se que o retângulo é uma figura plana composta de 4 lados, e por isso, é considerado um quadrilátero.
+	Dois lados do retângulo são menores e geralmente indicam a altura (h) ou a largura. E, dois lados são maiores e indicam a base (b) ou o comprimento da figura.
+	No entanto, há retângulos em que a altura é maior que a base.</p>
+
+	<center>
+		<img src="../imagens/retanguloperi.jpg" width="400px" height="250px" style="border-radius: 50px;" alt="Imagem de um retângulo com base e altura para o cálculo de seu perímetro." title="Perímetro do retângulo">
+	</center>
+
+	<br>
+
+	<center>
+		<form name="formPerimetro">
+			<select name="opcao" class="opcoes" onchange="mostrarEsconder()">
+				<option value="0" id="opcaoDefault">...</option>
+				<option value="1">Quadrado</option>
+				<option value="2">Circunferência</option>
+				<option value="3">Retângulo</option>
+			</select>
+
+			<p></p>
+			
+			<div id="divQuadrado" style="display: none;">
+				<p class="pladinho">O perímetro do quadrado é calculado pela simples fórmula:<br>L * 4<br>Sendo "L" o valor do lado e o número 4 decorrente do número de lados de um quadrado.</p>
+				<input type="text" name="quadradoPerimetro" placeholder="Digite aqui o valor do lado." class="textPerimetros" id="valor1">
+			</div>
+			
+			<p></p>
+			
+			<div id="divCircunferencia" style="display: none;">
+				<p class="pladinho">O perímetro de uma circunferência é calculado pela fórmula:<br>2 * π (3,14) * raio</p>
+				<input type="text" name="circunferenciaPerimetro" placeholder="Digite aqui o valor do raio." class="textPerimetros">
+			</div>
+			
+			<p></p>
+			
+			<div id="divRetangulo" style="display: none;">
+				<p class="pladinho">O perímetro de um retângulo é calculado da seguinte forma:<br>O valor da base é multiplicado por 2, assim como o da altura. Então, somamos os resultados.<br>Isso acontece porque o valor da altura e da base de um retângulo são diferentes um do outro, porém iguais em seus paralelos. Se todos os lados fossem iguais, seria um quadrado.</p>
+				<input type="text" name="retanguloAltura" placeholder="Digite aqui a altura do retângulo." class="textPerimetros">
+				<input type="text" name="retanguloLargura" placeholder="Digite aqui a largura do retângulo." class="textPerimetros">
+			</div>
+			
+			<p></p>
+			
+			<input type="button" name="executar" value="Executar o cálculo" onclick="perimetros();" class="buttonPerimetro">
+			
+			<p></p>
+			
+			<input type="text" name="resultado" id="resultadoId" class="textPerimetros" placeholder="O resultado aparecerá aqui." disabled="">
+		</form>
+	</center>
+
+	<br><br>
+
+	<center>
+			<a href="#"><img src="../imagens/back.png" width="40px" height="40px" id="topo" alt="Botão de voltar ao topo da página" title="Voltar ao topo"></a>
+	</center>
+
+	<footer id="footer">
+		<h1 id="footerH1">Contato</h1>
+		<table id="footerTable" border="0">
+			<tr>
+
+				<td class="footerTD">
+					<a href="https://www.facebook.com/EeepProfessoraLuizadeTeodoro/" target="_blank"><img src="../imagens/fb.png" width="100px" height="100px" alt="Facebook da escola." title="Facebook da escola"></a>
+				</td>
+				
+				<td class="footerTD">
+					<p>Autores: Vitor Lucas, João Victor Vieira, Andrew Monteiro
+					<br>Fone: (85) 99226-5324</p>
+					<p>Escola Profissionalizante Professora Luiza de Teodoro Vieira
+					<br>Pacatuba - CE</p>
+					<p>2019</p>			
+				</td>
+
+				<td class="footerTD">
+					<a href="https://www.instagram.com/eeep_ltvgremio/?hl=pt-br" target="_blank"><img src="../imagens/instagram.png" width="100px" height="100px" alt="Instagram da escola." title="Instagram da escola"></a>
+				</td>
+			
+			</tr>
+		</table>			
+	</footer>
+
+</body>
+</html>
